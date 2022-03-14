@@ -2148,4 +2148,22 @@ System.out.println(Arrays.equals(arr1,arr2));
         <category>多线程</category>
       </categories>
   </entry>
+  <entry>
+    <title>音乐系统开发问题记录</title>
+    <url>/2022/03/15/%E9%9F%B3%E4%B9%90%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="问题记录"><a href="#问题记录" class="headerlink" title="问题记录"></a>问题记录</h1><h2 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a><strong>问题一</strong></h2><p>前端使用audio进行音乐播放，在canplay方法中进行音乐播放的逻辑。使用vuex保存全局数据，刷新页面时做了对vuex全局数据的保存操作。</p>
+<p>但有个问题就是，前面要是进行过音乐播放，vuex里面就保存播放的链接，而canplay方法会进行链接的判断，有链接就播放，因此每次刷新都会产生自动的播放。</p>
+<p><strong>初次解决方法逻辑：</strong>通过刷新前，将vuex播放链接去掉，设置vuex中isPlay为false。</p>
+<p><strong>这种逻辑存在的问题：</strong>刷新后，点击播放也无法进行播放了，因为链接为空。</p>
+<p><strong>解决时间：</strong>2022/03/14</p>
+<p><strong>解决方法：</strong>在与同学的讨论后，既然在刷新时已经把vuex中的isPlay设置为空，那就可以在canplay中播放音乐前对isPlay进行判断，isPlay为false就直接返回不走下面的逻辑。</p>
+<p><strong>解决结果：</strong>实现了刷新后暂停音乐的播放，并且点击能继续播放</p>
+<h2 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h2><p>添加歌曲到歌单时局部刷新从新走create方法获取歌单数据，但子组件局部刷新会引起全局刷新。</p>
+<p><strong>解决时间：</strong>2022/03/14</p>
+<p><strong>解决方法：</strong>添加歌曲到歌单后再不做刷新了，而是调用完添加操作的接口后就直接再次请求获取歌单的接口进行数据刷新</p>
+]]></content>
+      <categories>
+        <category>系统开发</category>
+      </categories>
+  </entry>
 </search>
