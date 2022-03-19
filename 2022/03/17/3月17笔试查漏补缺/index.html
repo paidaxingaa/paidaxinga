@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="java,线程," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,16 @@
 
 
 
-<meta name="description" content="概述​        synchronized关键字解决线程之间访问资源的同步性，可以保证被它修饰的方法或者代码块在任意时刻只能有一个线程执行。 三大特征​        原子性：一个或多个操作要么全部执行成功，要么全部执行失败。synchronized关键字可以保证只有一个线程拿到锁，访问共享资源。 ​        可见性：当一个线程对共享变量进行修改后，其他线程可以立刻看到。执行synchr">
+<meta name="description" content="SQL优化 insert批量查询采用insert into 表名 values()一次性插入。  主键尽量不使用类似于UUID这种，UUID做主键占用空间大，而且每次插入都需要花大量时间在排序上。  使用order by时，对排序字段建立索引。  使用group by时，对分组的字段建立索引。  limit分页查询，对查询字段使用索引覆盖。  尽量用where替换having 【having】是在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="synchronized关键字">
-<meta property="og:url" content="https://www.liyue18.top/2021/08/31/synchronized%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
+<meta property="og:title" content="3月17笔试查漏补缺">
+<meta property="og:url" content="https://www.liyue18.top/2022/03/17/3%E6%9C%8817%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/index.html">
 <meta property="og:site_name" content="paidaixing的个人博客">
-<meta property="og:description" content="概述​        synchronized关键字解决线程之间访问资源的同步性，可以保证被它修饰的方法或者代码块在任意时刻只能有一个线程执行。 三大特征​        原子性：一个或多个操作要么全部执行成功，要么全部执行失败。synchronized关键字可以保证只有一个线程拿到锁，访问共享资源。 ​        可见性：当一个线程对共享变量进行修改后，其他线程可以立刻看到。执行synchr">
+<meta property="og:description" content="SQL优化 insert批量查询采用insert into 表名 values()一次性插入。  主键尽量不使用类似于UUID这种，UUID做主键占用空间大，而且每次插入都需要花大量时间在排序上。  使用order by时，对排序字段建立索引。  使用group by时，对分组的字段建立索引。  limit分页查询，对查询字段使用索引覆盖。  尽量用where替换having 【having】是在">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-08-31T12:19:05.000Z">
-<meta property="article:modified_time" content="2021-09-03T14:37:59.174Z">
+<meta property="article:published_time" content="2022-03-17T13:24:33.000Z">
+<meta property="article:modified_time" content="2022-03-17T14:36:53.356Z">
 <meta property="article:author" content="paidaxing">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="线程">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://www.liyue18.top/2021/08/31/synchronized关键字/"/>
+  <link rel="canonical" href="https://www.liyue18.top/2022/03/17/3月17笔试查漏补缺/"/>
 
 
 
 
 
-  <title>synchronized关键字 | paidaixing的个人博客</title>
+  <title>3月17笔试查漏补缺 | paidaixing的个人博客</title>
   
 
 
@@ -298,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.liyue18.top/2021/08/31/synchronized%E5%85%B3%E9%94%AE%E5%AD%97/">
+    <link itemprop="mainEntityOfPage" href="https://www.liyue18.top/2022/03/17/3%E6%9C%8817%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="paidaxing">
@@ -315,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">synchronized关键字</h1>
+          <h1 class="post-title" itemprop="name headline">3月17笔试查漏补缺</h1>
         
 
         <div class="post-meta">
@@ -327,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-31T20:19:05+08:00">
-                2021-08-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-03-17T21:24:33+08:00">
+                2022-03-17
               </time>
             
 
@@ -343,8 +341,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2021-09-03T22:37:59+08:00">
-                2021-09-03
+              <time title="更新于" itemprop="dateModified" datetime="2022-03-17T22:36:53+08:00">
+                2022-03-17
               </time>
             
           </span>
@@ -362,8 +360,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
+                  <a href="/categories/%E7%AC%94%E8%AF%95/" itemprop="url" rel="index">
+                    <span itemprop="name">笔试</span>
                   </a>
                 </span>
 
@@ -398,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.4k
+                  622
                 </span>
               
 
@@ -423,46 +421,42 @@
       
 
       
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>​        synchronized关键字解决线程之间访问资源的同步性，可以保证被它修饰的方法或者代码块在任意时刻只能有一个线程执行。</p>
-<h2 id="三大特征"><a href="#三大特征" class="headerlink" title="三大特征"></a>三大特征</h2><p>​        <strong>原子性：</strong>一个或多个操作要么全部执行成功，要么全部执行失败。synchronized关键字可以保证只有一个线程拿到锁，访问共享资源。</p>
-<p>​        <strong>可见性：</strong>当一个线程对共享变量进行修改后，其他线程可以立刻看到。执行synchronized时，会对应执行lock、unlock原子操作，保证可见性。</p>
-<p>​        <strong>有序性：</strong>程序的执行顺序会按照代码的先后顺序执行。</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>​        <strong>修饰代码块：</strong>即同步代码块，作用的对象是调用这个代码块的对象。即指定加锁对象，对给定的对象加锁，进入同步代码块之前要获得给定的对象的锁。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">SynchronizedDemo</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">synchronized</span> (<span class="keyword">this</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;同步代码块&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​        <strong>修饰实例方法：</strong>即同步方法，其作用的范围是整个方法，作用的对象是调用这个方法的对象。进入同步方法之前要获取当前对象实例的锁。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">SynchronizedDemo2</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;同步方法&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​        <strong>修饰静态方法：</strong>也就是给当前类加锁，会作用于类的所有对象实例，因为静态成员不属于任何一个实例对象。如果一个线程A调用一个实例对象的非静态synchronized方法，而线程B需要调用这个实例对象所属类的静态synchronized方法，是允许的，不会发生互斥现象。因为访问静态synchronized方法占用的锁是当前类的锁，而访问非静态synchronized方法占用的锁是当前实例对象锁。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">SynchronizedDemo3</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;同步静态方法&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
+        <h1 id="SQL优化"><a href="#SQL优化" class="headerlink" title="SQL优化"></a>SQL优化</h1><ul>
+<li><p>insert批量查询采用insert into 表名 values()一次性插入。</p>
+</li>
+<li><p>主键尽量不使用类似于UUID这种，UUID做主键占用空间大，而且每次插入都需要花大量时间在排序上。</p>
+</li>
+<li><p>使用order by时，对排序字段建立索引。</p>
+</li>
+<li><p>使用group by时，对分组的字段建立索引。</p>
+</li>
+<li><p>limit分页查询，对查询字段使用索引覆盖。</p>
+</li>
+<li><p>尽量用where替换having</p>
+<p>【having】是在查询出结果再进行筛选的，而【where】是在聚合之前进行筛选出符合的数据，将需要的数据筛选出来之后再进行聚合，提高了效率。除非必要在聚合之后才可以筛选，否则尽量避免使用</p>
+</li>
+<li><p>当我们在多条件进行查询，需要使用or进行关联时，我们可以通过使用union all来替代or的情况。</p>
+</li>
+</ul>
+<h1 id="具有n个结点的完全二叉树的深度为「log2n」-1"><a href="#具有n个结点的完全二叉树的深度为「log2n」-1" class="headerlink" title="具有n个结点的完全二叉树的深度为「log2n」+1"></a>具有n个结点的完全二叉树的深度为「log2n」+1</h1><p>[ ]表示向下取整</p>
+<h1 id="在linux系统中显示内核模块的命令"><a href="#在linux系统中显示内核模块的命令" class="headerlink" title="在linux系统中显示内核模块的命令"></a>在linux系统中显示内核模块的命令</h1><p>insmod</p>
+<h1 id="man-5-shadow的作用"><a href="#man-5-shadow的作用" class="headerlink" title="man 5 shadow的作用"></a>man 5 shadow的作用</h1><p>显示shadow配置文件的帮助</p>
+<h1 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> daily;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReflectDemo</span> <span class="keyword">extends</span> <span class="title">Date</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="keyword">super</span>.getClass().getName());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> ReflectDemo().test();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>总结：synchronized关键字加到static静态方法和synchronized(class)代码块上都是给Class类上锁。synchronized关键字加到实例方法是给对象实例上锁。尽量不要使用synchronized(String a)，因为JVM中字符串常量池具有缓存功能。</p>
+<p>输出：daily.ReflectDemo</p>
 </blockquote>
-<p>​        <strong>双重校验锁实现对象单例：</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(Singleton.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(instance == <span class="keyword">null</span>)&#123;</span><br><span class="line">                    instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="synchronized关键字可以实现什么类型的锁"><a href="#synchronized关键字可以实现什么类型的锁" class="headerlink" title="synchronized关键字可以实现什么类型的锁"></a>synchronized关键字可以实现什么类型的锁</h2><p>​        <strong>悲观锁：</strong>synchronized关键字实现的是悲观锁，每次访问共享资源时都会上锁。</p>
-<p>​        <strong>非公平锁：</strong>synchronized关键字实现的是非公平锁，即线程获取锁的顺序并不一定是按照线程阻塞的顺序。</p>
-<p>​        <strong>可重入锁：</strong>synchronized关键字实现的是可重入锁，即已经获取锁的线程可以再次获取锁。</p>
-<p>​        <strong>独占锁或排他锁：</strong>synchronized关键字实现的是独占锁，即该锁只能被一个线程所持有，其他线程均被阻塞。</p>
-<h2 id="synchronized关键字底层优化"><a href="#synchronized关键字底层优化" class="headerlink" title="synchronized关键字底层优化"></a>synchronized关键字底层优化</h2><p>​        JDK1.6后对锁的实现引入了大量优化，如偏向锁、轻量级锁、自旋锁、适应性自旋锁、锁消除、锁优化等来减少操作的开销。锁主要存在四种状态，依次是：无锁状态、偏向锁状态、轻量级锁状态、重量级锁，它们会随着竞争的激烈而逐渐升级。</p>
-<h2 id="synchronized和ReentrantLock的区别"><a href="#synchronized和ReentrantLock的区别" class="headerlink" title="synchronized和ReentrantLock的区别"></a>synchronized和ReentrantLock的区别</h2><p>​        （1）<strong>两者都是可重入锁：</strong></p>
-<p>​        可重入锁的概念是，自己可以再次获取自己的内部锁。比如一个线程获得了某个对象的锁，此时这个对象锁还没释放，当其再次想要获取这个对象的锁的时候还是可以获取的。</p>
-<p>​        （2）<strong>synchronized依赖于JVM而ReentrantLock依赖于API：</strong></p>
-<p>​        synchronized是依赖于JVM实现的，而ReentrantLock是JDK层面实现的，需要lock()和unlock()方法配合try/finally语句块来完成。</p>
-<p>​        （3）<strong>ReentrantLock比synchronized增加了一些高级功能：</strong></p>
-<p>​        主要有三点：等待可中断、可实现公平锁、可实现选择性通知（锁可以绑定多个条件）</p>
-<blockquote>
-<ol>
-<li>​        ReentrantLock提供了一种能够中断等待锁的线程机制，通过lock.lockInterruptibly()来实现这个机制。也就是说正在等待的线程可以选择放弃等待，改为处理其他事情。</li>
-<li>​        ReentrantLock可以指定是公平锁还是非公平锁。而synchronized只能是非公平锁。所谓公平锁是先等待的线程先获得锁。ReentrantLock默认情况是非公平的，可以通过ReentrantLock类的ReentrantLock(boolean fair)构造方法来制定是否是公平的。</li>
-<li>​        synchronized关键字可以与wait()和notify()/notifyAll()方法相结合可以实现等待/通知机制，ReentrantLock要借助Condition接口与newCondition()方法。Condition有很好的灵活性，比如可以实现多路通知功能也就是一个Lock对象可以创建多个Condition实例(即对象监视器)，线程对象可以注册在指定的Condition中，从而获得有选择性的进行线程通知。<strong>在使用notify()/notifyAll()方法进行通知时，被通知的线程是由JVM选择的，用ReentrantLock类结合Condition实例可以实现选择性通知。</strong>而synchronized关键字就相当于整个Lock对象中只有一个Condition实例，所有线程都注册在它身上，如果执行notifyAll()方法的话就会通知所有处于等待的线程或造成很大的效率问题。<strong>而Condition实例的signalAll()方法，只会唤醒注册Condition实例中的所有线程。</strong></li>
-</ol>
-</blockquote>
-<p>​        （4）<strong>性能不再是选择标准</strong></p>
+<h1 id="C语言文件打开模式"><a href="#C语言文件打开模式" class="headerlink" title="C语言文件打开模式"></a>C语言文件打开模式</h1><ul>
+<li>w+ 打开可读写文件，若文件存在则文件长度清为零，即该文件内容会消失。若文件不存在则建立该文件</li>
+<li>wb 只写方式打开或新建一个二进制文件，只允许写数据</li>
+<li>wb+ 读写方式打开或建立一个二进制文件，允许读和写。</li>
+<li>r 打开只读文件，该文件必须存在，否则报错。</li>
+<li>r+ 打开可读写的文件，该文件必须存在，否则报错。</li>
+<li>rb+ 读写方式打开一个二进制文件，只允许读写数据。</li>
+<li>a 以附加的方式打开只写文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾，即文件原先的内容会被保留。（EOF符保留）</li>
+<li>a+ 以附加方式打开可读写的文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾后，即文件原先的内容会被保留。 （原来的EOF符不保留）</li>
+<li>ab+ 读写打开一个二进制文件，允许读或在文件末追加数据。</li>
+</ul>
 
       
     </div>
@@ -483,7 +477,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.liyue18.top/2021/08/31/synchronized%E5%85%B3%E9%94%AE%E5%AD%97/" title="synchronized关键字">https://www.liyue18.top/2021/08/31/synchronized%E5%85%B3%E9%94%AE%E5%AD%97/</a>
+    <a href="https://www.liyue18.top/2022/03/17/3%E6%9C%8817%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" title="3月17笔试查漏补缺">https://www.liyue18.top/2022/03/17/3%E6%9C%8817%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -496,14 +490,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/java/" rel="tag"># java</a>
-          
-            <a href="/tags/%E7%BA%BF%E7%A8%8B/" rel="tag"># 线程</a>
-          
-        </div>
-      
 
       
       
@@ -513,8 +499,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/08/30/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="next" title="Hexo常用命令">
-                <i class="fa fa-chevron-left"></i> Hexo常用命令
+              <a href="/2022/03/15/%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E6%89%80%E6%9C%89%E5%AD%90%E9%9B%86-%E7%AE%97%E6%B3%95/" rel="next" title="获取数组所有子集(算法)">
+                <i class="fa fa-chevron-left"></i> 获取数组所有子集(算法)
               </a>
             
           </div>
@@ -523,8 +509,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/08/31/Next%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4/" rel="prev" title="Next主题开启更新时间">
-                Next主题开启更新时间 <i class="fa fa-chevron-right"></i>
+              <a href="/2022/03/19/3%E6%9C%8819%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" rel="prev" title="3月19笔试查漏补缺">
+                3月19笔试查漏补缺 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -699,7 +685,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81"><span class="nav-number">2.</span> <span class="nav-text">三大特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#synchronized%E5%85%B3%E9%94%AE%E5%AD%97%E5%8F%AF%E4%BB%A5%E5%AE%9E%E7%8E%B0%E4%BB%80%E4%B9%88%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%94%81"><span class="nav-number">4.</span> <span class="nav-text">synchronized关键字可以实现什么类型的锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#synchronized%E5%85%B3%E9%94%AE%E5%AD%97%E5%BA%95%E5%B1%82%E4%BC%98%E5%8C%96"><span class="nav-number">5.</span> <span class="nav-text">synchronized关键字底层优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#synchronized%E5%92%8CReentrantLock%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">6.</span> <span class="nav-text">synchronized和ReentrantLock的区别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL%E4%BC%98%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">SQL优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B7%E6%9C%89n%E4%B8%AA%E7%BB%93%E7%82%B9%E7%9A%84%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6%E4%B8%BA%E3%80%8Clog2n%E3%80%8D-1"><span class="nav-number">2.</span> <span class="nav-text">具有n个结点的完全二叉树的深度为「log2n」+1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%98%BE%E7%A4%BA%E5%86%85%E6%A0%B8%E6%A8%A1%E5%9D%97%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">在linux系统中显示内核模块的命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#man-5-shadow%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">man 5 shadow的作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%93%E5%8D%B0"><span class="nav-number">5.</span> <span class="nav-text">打印</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E6%A8%A1%E5%BC%8F"><span class="nav-number">6.</span> <span class="nav-text">C语言文件打开模式</span></a></li></ol></div>
             
 
           </div>

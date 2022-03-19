@@ -2179,4 +2179,66 @@ System.out.println(Arrays.equals(arr1,arr2));
         <category>算法</category>
       </categories>
   </entry>
+  <entry>
+    <title>3月17笔试查漏补缺</title>
+    <url>/2022/03/17/3%E6%9C%8817%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/</url>
+    <content><![CDATA[<h1 id="SQL优化"><a href="#SQL优化" class="headerlink" title="SQL优化"></a>SQL优化</h1><ul>
+<li><p>insert批量查询采用insert into 表名 values()一次性插入。</p>
+</li>
+<li><p>主键尽量不使用类似于UUID这种，UUID做主键占用空间大，而且每次插入都需要花大量时间在排序上。</p>
+</li>
+<li><p>使用order by时，对排序字段建立索引。</p>
+</li>
+<li><p>使用group by时，对分组的字段建立索引。</p>
+</li>
+<li><p>limit分页查询，对查询字段使用索引覆盖。</p>
+</li>
+<li><p>尽量用where替换having</p>
+<p>【having】是在查询出结果再进行筛选的，而【where】是在聚合之前进行筛选出符合的数据，将需要的数据筛选出来之后再进行聚合，提高了效率。除非必要在聚合之后才可以筛选，否则尽量避免使用</p>
+</li>
+<li><p>当我们在多条件进行查询，需要使用or进行关联时，我们可以通过使用union all来替代or的情况。</p>
+</li>
+</ul>
+<h1 id="具有n个结点的完全二叉树的深度为「log2n」-1"><a href="#具有n个结点的完全二叉树的深度为「log2n」-1" class="headerlink" title="具有n个结点的完全二叉树的深度为「log2n」+1"></a>具有n个结点的完全二叉树的深度为「log2n」+1</h1><p>[ ]表示向下取整</p>
+<h1 id="在linux系统中显示内核模块的命令"><a href="#在linux系统中显示内核模块的命令" class="headerlink" title="在linux系统中显示内核模块的命令"></a>在linux系统中显示内核模块的命令</h1><p>insmod</p>
+<h1 id="man-5-shadow的作用"><a href="#man-5-shadow的作用" class="headerlink" title="man 5 shadow的作用"></a>man 5 shadow的作用</h1><p>显示shadow配置文件的帮助</p>
+<h1 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> daily;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReflectDemo</span> <span class="keyword">extends</span> <span class="title">Date</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="keyword">super</span>.getClass().getName());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> ReflectDemo().test();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出：daily.ReflectDemo</p>
+</blockquote>
+<h1 id="C语言文件打开模式"><a href="#C语言文件打开模式" class="headerlink" title="C语言文件打开模式"></a>C语言文件打开模式</h1><ul>
+<li>w+ 打开可读写文件，若文件存在则文件长度清为零，即该文件内容会消失。若文件不存在则建立该文件</li>
+<li>wb 只写方式打开或新建一个二进制文件，只允许写数据</li>
+<li>wb+ 读写方式打开或建立一个二进制文件，允许读和写。</li>
+<li>r 打开只读文件，该文件必须存在，否则报错。</li>
+<li>r+ 打开可读写的文件，该文件必须存在，否则报错。</li>
+<li>rb+ 读写方式打开一个二进制文件，只允许读写数据。</li>
+<li>a 以附加的方式打开只写文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾，即文件原先的内容会被保留。（EOF符保留）</li>
+<li>a+ 以附加方式打开可读写的文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾后，即文件原先的内容会被保留。 （原来的EOF符不保留）</li>
+<li>ab+ 读写打开一个二进制文件，允许读或在文件末追加数据。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>笔试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>3月19笔试查漏补缺</title>
+    <url>/2022/03/19/3%E6%9C%8819%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/</url>
+    <content><![CDATA[<h1 id="Set集合可以存null么"><a href="#Set集合可以存null么" class="headerlink" title="Set集合可以存null么"></a>Set集合可以存null么</h1><p>Set集合也可以存储null，但只能存储一个，即使添加多个也只能存储一个</p>
+<h1 id="用一条sql语句查询出每门课都大于80分的学生姓名"><a href="#用一条sql语句查询出每门课都大于80分的学生姓名" class="headerlink" title="用一条sql语句查询出每门课都大于80分的学生姓名"></a>用一条sql语句查询出每门课都大于80分的学生姓名</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name course score</span><br><span class="line">张三  语文   81</span><br><span class="line">张三  数学   75</span><br><span class="line">李四  语文   76</span><br><span class="line">李四  数学   90</span><br><span class="line">王五  数学   100</span><br><span class="line">王五  语文   81</span><br><span class="line">王五  英语   90</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#查询每门课最低分数都大于80的学生</span><br><span class="line">select name,min(score) </span><br><span class="line">from student</span><br><span class="line">group by name</span><br><span class="line">having min(sorce) &gt; 80</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#最终</span><br><span class="line">select name </span><br><span class="line">from (select name,min(score) </span><br><span class="line">      from student</span><br><span class="line">      group by name</span><br><span class="line">      having min(sorce) &gt; 80) stu</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="什么要使用Iterator"><a href="#什么要使用Iterator" class="headerlink" title="什么要使用Iterator"></a>什么要使用Iterator</h1><p>Iterator模式是用于遍历集合类的标准访问方法。它可以把访问逻辑从不同类型的集合类中抽象出来，从而避免向客户端暴露集合的内部结构。</p>
+<h1 id="LRU缓存的内部主要数据结构是什么？实现？"><a href="#LRU缓存的内部主要数据结构是什么？实现？" class="headerlink" title="LRU缓存的内部主要数据结构是什么？实现？"></a>LRU缓存的内部主要数据结构是什么？实现？</h1><p><strong>内部主要数据结构：</strong>HashMap+双向链表</p>
+<p><strong>实现：</strong>假设缓存的大小固定，初始状态为空。每发生一次读内存操作，首先查找待读取的数据是否存在于缓存中，若是，则缓存命中，返回数据；若否，则缓存未命中，从内存中读取数据，并把该数据添加到缓存中。向缓存添加数据时，如果缓存已满，则需要删除访问时间最早的那条数据，这种更新缓存的方法就叫做LRU</p>
+]]></content>
+      <categories>
+        <category>笔试</category>
+      </categories>
+  </entry>
 </search>
