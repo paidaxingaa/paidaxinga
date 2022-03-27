@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="概述当对象存在一对多关系时，则使用观察者模式。如当一个对象被修改时会自动通知依赖它的对象。 实现12345678910111213141516171819202122232425262728293031package test2.observer;import java.util.ArrayList;import java.util.List;public class Subject &amp;#123;">
+<meta name="description" content="已知算术表达式的中缀形式为A+B*C-D&#x2F;E，后缀形式为ABC^+DE&#x2F;-，其前缀表达式为？ 从右至左扫描 s2：ED&#x2F;CB*A s1：-+ 最终s2：ED&#x2F;CB*A+- 结果：-+A*BC&#x2F;DE 非对称加密与对称加密的区别？ 对称加密: 加密和解密的秘钥使用的是同一个. 非对称加密: 与对称加密算法不同，非对称加密算法需要两个密钥，公开密钥（publickey）和私有密钥（privatekey）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="观察者模式">
-<meta property="og:url" content="https://www.liyue18.top/2022/03/24/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:title" content="3月26笔试查漏补缺">
+<meta property="og:url" content="https://www.liyue18.top/2022/03/27/3%E6%9C%8826%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/index.html">
 <meta property="og:site_name" content="paidaixing的个人博客">
-<meta property="og:description" content="概述当对象存在一对多关系时，则使用观察者模式。如当一个对象被修改时会自动通知依赖它的对象。 实现12345678910111213141516171819202122232425262728293031package test2.observer;import java.util.ArrayList;import java.util.List;public class Subject &amp;#123;">
+<meta property="og:description" content="已知算术表达式的中缀形式为A+B*C-D&#x2F;E，后缀形式为ABC^+DE&#x2F;-，其前缀表达式为？ 从右至左扫描 s2：ED&#x2F;CB*A s1：-+ 最终s2：ED&#x2F;CB*A+- 结果：-+A*BC&#x2F;DE 非对称加密与对称加密的区别？ 对称加密: 加密和解密的秘钥使用的是同一个. 非对称加密: 与对称加密算法不同，非对称加密算法需要两个密钥，公开密钥（publickey）和私有密钥（privatekey）">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-03-24T15:59:07.000Z">
-<meta property="article:modified_time" content="2022-03-24T18:41:17.871Z">
+<meta property="article:published_time" content="2022-03-27T14:44:22.000Z">
+<meta property="article:modified_time" content="2022-03-27T18:36:39.731Z">
 <meta property="article:author" content="paidaxing">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://www.liyue18.top/2022/03/24/观察者模式/"/>
+  <link rel="canonical" href="https://www.liyue18.top/2022/03/27/3月26笔试查漏补缺/"/>
 
 
 
 
 
-  <title>观察者模式 | paidaixing的个人博客</title>
+  <title>3月26笔试查漏补缺 | paidaixing的个人博客</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.liyue18.top/2022/03/24/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="https://www.liyue18.top/2022/03/27/3%E6%9C%8826%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="paidaxing">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">观察者模式</h1>
+          <h1 class="post-title" itemprop="name headline">3月26笔试查漏补缺</h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-03-24T23:59:07+08:00">
-                2022-03-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-03-27T22:44:22+08:00">
+                2022-03-27
               </time>
             
 
@@ -341,8 +341,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-03-25T02:41:17+08:00">
-                2022-03-25
+              <time title="更新于" itemprop="dateModified" datetime="2022-03-28T02:36:39+08:00">
+                2022-03-28
               </time>
             
           </span>
@@ -360,8 +360,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
+                  <a href="/categories/%E7%AC%94%E8%AF%95/" itemprop="url" rel="index">
+                    <span itemprop="name">笔试</span>
                   </a>
                 </span>
 
@@ -396,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  472
+                  500
                 </span>
               
 
@@ -421,25 +421,28 @@
       
 
       
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>当对象存在一对多关系时，则使用观察者模式。如当一个对象被修改时会自动通知依赖它的对象。</p>
-<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test2.observer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Subject</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;Observer&gt; observers = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> state;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getState</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> state;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//设置状态的同时通知所有观察者去更新</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setState</span><span class="params">(<span class="keyword">int</span> state)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.state = state;</span><br><span class="line">        notifyAllObservers();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//通知所有观察者</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">notifyAllObservers</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (Observer observer : observers)&#123;</span><br><span class="line">            observer.update();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attach</span><span class="params">(Observer observer)</span></span>&#123;</span><br><span class="line">        observers.add(observer);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test2.observer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Observer</span> </span>&#123;</span><br><span class="line">    Subject subject;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test2.observer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstObserver</span> <span class="keyword">extends</span> <span class="title">Observer</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">FirstObserver</span><span class="params">(Subject subject)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subject = subject;</span><br><span class="line">        <span class="keyword">this</span>.subject.attach(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;第一个观察者收到更新：&quot;</span>+subject.getState());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test2.observer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondObserver</span> <span class="keyword">extends</span> <span class="title">Observer</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SecondObserver</span><span class="params">(Subject subject)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subject = subject;</span><br><span class="line">        <span class="keyword">this</span>.subject.attach(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;第二个观察者收到更新：&quot;</span>+subject.getState());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test2.observer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThirdObserver</span> <span class="keyword">extends</span> <span class="title">Observer</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ThirdObserver</span><span class="params">(Subject subject)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subject = subject;</span><br><span class="line">        <span class="keyword">this</span>.subject.attach(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;第三个观察者收到更新：&quot;</span>+subject.getState());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test2.observer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ObserverDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Subject subject = <span class="keyword">new</span> Subject();</span><br><span class="line">        <span class="comment">//监听同一对象subject</span></span><br><span class="line">        <span class="keyword">new</span> FirstObserver(subject);</span><br><span class="line">        <span class="keyword">new</span> SecondObserver(subject);</span><br><span class="line">        <span class="keyword">new</span> ThirdObserver(subject);</span><br><span class="line">        System.out.println(<span class="string">&quot;当前状态：1&quot;</span>);</span><br><span class="line">        subject.setState(<span class="number">1</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;当前状态：2&quot;</span>);</span><br><span class="line">        subject.setState(<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p><strong>已知算术表达式的中缀形式为A+B*C-D/E，后缀形式为ABC^+DE/-，其前缀表达式为？</strong></p>
+<p>从右至左扫描</p>
+<p>s2：ED/CB*A</p>
+<p>s1：-+</p>
+<p>最终s2：ED/CB*A+-</p>
+<p>结果：-+A*BC/DE</p>
+<p><strong>非对称加密与对称加密的区别？</strong></p>
+<p>对称加密: 加密和解密的秘钥使用的是同一个.</p>
+<p>非对称加密: 与对称加密算法不同，非对称加密算法需要两个密钥，公开密钥（publickey）和私有密钥（privatekey），公钥加密，私钥解密。</p>
+<p><strong>对象锁和类锁的区别？</strong></p>
+<p>类锁的锁范围是对于类的所有实例对象，定义与非静态方法上的锁或者synchronized代码块中用this做锁。</p>
+<p>对象锁是针对与指定实例对象的，定义与静态方法上的锁或者synchronized代码块中用类.class做锁。</p>
+<p><strong>Integer相关</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IntegerDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        demo(<span class="number">49</span>);</span><br><span class="line">        System.out.println();</span><br><span class="line">        demo(<span class="number">200</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">demo</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">        Integer num1 = <span class="keyword">new</span> Integer(i);</span><br><span class="line">        Integer num2 = <span class="keyword">new</span> Integer(i);</span><br><span class="line">        Integer num3 = i;</span><br><span class="line">        Integer num4 = Integer.valueOf(i);</span><br><span class="line">        Integer num5 = Integer.valueOf(i);</span><br><span class="line"></span><br><span class="line">        System.out.print(num1 == num2);</span><br><span class="line">        System.out.print(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">        System.out.print(num2 == num3);</span><br><span class="line">        System.out.print(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">        System.out.print(num3 == num4);</span><br><span class="line">        System.out.print(<span class="string">&quot;,&quot;</span>);</span><br><span class="line">        System.out.print(num4 == num5);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">当前状态：1</span><br><span class="line">第一个观察者收到更新：1</span><br><span class="line">第二个观察者收到更新：1</span><br><span class="line">第三个观察者收到更新：1</span><br><span class="line">当前状态：2</span><br><span class="line">第一个观察者收到更新：2</span><br><span class="line">第二个观察者收到更新：2</span><br><span class="line">第三个观察者收到更新：2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">false,false,true,true</span><br><span class="line">false,false,false,false</span><br></pre></td></tr></table></figure>
 
+<p>使用valueOf时int在[-128,127]之间的时候会直接拿缓存</p>
+<p><strong>方法参数问题</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArgsDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">func</span><span class="params">(String key,String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println((args == <span class="keyword">null</span>) ? <span class="string">&quot;null&quot;</span> : args.length);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> NoSuchMethodException, InvocationTargetException, IllegalAccessException </span>&#123;</span><br><span class="line">        ArgsDemo demo = <span class="keyword">new</span> ArgsDemo();</span><br><span class="line">        Method m = demo.getClass().getMethod(<span class="string">&quot;func&quot;</span>,String.class,String[].class);</span><br><span class="line">        m.invoke(demo,<span class="keyword">new</span> String(),<span class="keyword">new</span> String[<span class="number">1</span>]);<span class="comment">//1</span></span><br><span class="line">        m.invoke(demo,<span class="keyword">new</span> String(),<span class="keyword">new</span> Object[]&#123;<span class="keyword">new</span> String[]&#123;<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>&#125;&#125;);<span class="comment">//2</span></span><br><span class="line">        m.invoke(demo,<span class="keyword">new</span> String(),(Object) <span class="keyword">new</span> String[]&#123;<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>&#125;);<span class="comment">//3</span></span><br><span class="line">        m.invoke(demo,<span class="keyword">new</span> String(),<span class="keyword">new</span> String[]&#123;<span class="string">&quot;a&quot;</span>&#125;);<span class="comment">//4</span></span><br><span class="line">        m.invoke(demo,<span class="keyword">new</span> String(),<span class="keyword">new</span> String[]&#123;<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>&#125;);<span class="comment">//5</span></span><br><span class="line">        m.invoke(demo,<span class="keyword">new</span> String(),<span class="keyword">new</span> String[<span class="number">2</span>]);<span class="comment">//5</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 第二行有问题，传入的是Object数组类型，不符合方法指定的参数类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-<h1 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h1><p>观察者模式就是观察者通过监听某一资源，当资源更新后，观察者可以得到最新的资源状态。</p>
 
       
     </div>
@@ -460,7 +463,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.liyue18.top/2022/03/24/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" title="观察者模式">https://www.liyue18.top/2022/03/24/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</a>
+    <a href="https://www.liyue18.top/2022/03/27/3%E6%9C%8826%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" title="3月26笔试查漏补缺">https://www.liyue18.top/2022/03/27/3%E6%9C%8826%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -482,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2022/03/19/3%E6%9C%8819%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" rel="next" title="3月19笔试查漏补缺">
-                <i class="fa fa-chevron-left"></i> 3月19笔试查漏补缺
+              <a href="/2022/03/26/3%E6%9C%8825%E7%AC%94%E8%AF%95%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA/" rel="next" title="3月25笔试查漏补缺">
+                <i class="fa fa-chevron-left"></i> 3月25笔试查漏补缺
               </a>
             
           </div>
@@ -491,10 +494,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2022/03/25/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/" rel="prev" title="深拷贝与浅拷贝">
-                深拷贝与浅拷贝 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -546,17 +545,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -658,22 +648,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%A7%A3"><span class="nav-number">3.</span> <span class="nav-text">理解</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
